@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="style.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery-inview@1.1.2/jquery.inview.min.js"></script>
+      <script>
+          <!-- 疾患項目のポップアップ -->
+          $(function(){
+          	$('.btns').click(function(){
+          		wn = '.' + $(this).data('tgt');
+          		var mW = $(wn).find('.modalBody').innerWidth() / 2;
+          		var mH = $(wn).find('.modalBody').innerHeight() / 2;
+          		$(wn).find('.modalBody').css({'margin-left':-mW,'margin-top':-mH});
+          		$(wn).fadeIn(500);
+          	});
+          	$('.close,.modalBK').click(function(){
+          		$(wn).fadeOut(500);
+          	});
+          });
+
+      </script>
+    <title>メディッコ疾患詳細</title>
+  </head>
+<body>　　
+
+　　　<!--headerはこちらに-->　　
+  <header>
+  </header>
+  <main>
+    <div class="container">
+
+      <!--見出し大はこちらに-->
+      <div class="title">
+        <h1>疾患と職種</h1>
+      </div>
+
+      <!--疾患と職種の関わりはこちらに-->
+      <div class="title_detail">
+        <h1>THAと職種の関わり</h1>
+        <p class="THA_text">大腿骨頸部骨折は転倒が危険因子のひとつとなる高齢者に多い疾患です。病院では主に整形外科で扱われ、多くの医療従事者が関わっています。
+                            しかし、皆さんは他の医療従事者が大腿骨頸部骨折という疾患に対するTHAでの外科治療までにどのように関与しているかご存知でしょうか？
+                            患者の入院から退院までどのように医療従事者が関わるかを理解することで、他職種とのスムーズな連携や疾患に対する理解が深まると考えています。
+                            今回は大腿骨頸部骨折におけるTHAを例に挙げて医療従事者がどのように関わっているかご紹介します。
+        </p>
+        <img src="#" alt="THAに関する画像" class="THA_image">
+        <div class="clear"></div>
+
+        <h1 class="detail_explain">疾患の説明</h1>
+        <div class="detail02">
+          <div class="symptom">
+            <div class="detail">
+              <p data-tgt="wd1" class="btns">症状</p>
+              <div class="modal wd1">
+                	<div class="modalBody">
+                		<p class="close">×close</p><br>
+                		<p>大腿骨頸部骨折の主な症状は、股関節痛を訴え、歩行不良になるなどの症状が現れます。<br><br>
+                      ・足の付け根の強い痛み<br>
+                      ・歩行困難または歩行不良<br>
+                      ・中等度以上の認知症患者の場合は痛みの訴えがない場合もある
+                    </p>
+                	</div>
+                	<div class="modalBK"></div>
+              </div>
+            </div>
+          </div>
+          <div class="cause">
+            <div class="detail">
+              <p data-tgt="wd2" class="btns">原因</p>
+              <div class="modal wd2">
+                	<div class="modalBody">
+                		<p class="close">×close</p><br>
+                		<p>主な原因は高齢の女性に多く発症する骨粗しょう症です。その他に若年層では転落・交通事故・スポーツなどによる外部からの強い圧力によって起こりますが、骨粗しょう症のある高齢者の場合は転倒・階段からの転落・尻もちなどの軽微な力で骨折する場合があります。</p>
+                	</div>
+                	<div class="modalBK"></div>
+                  </div>
+            </div>
+          </div>
+          <div class="therapy">
+            <div class="detail">
+              <p data-tgt="wd3" class="btns">治療法</p>
+              <div class="modal wd3">
+                	<div class="modalBody">
+                		<p class="close">×close</p><br>
+                		<p>大腿骨頸部骨折・転子部骨折ともに治療法の第一選択として手術療法が選択されます。術式にはTHA（人工関節置換術）、ピン固定、プレート固定などが選択されます。転移の大きい骨折や高齢者の場合には股関節全体の人工関節への置換がメインになります。</p>
+                	</div>
+                	<div class="modalBK"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--アクション①はこちらに-->
+      <h1 class="intervention">アクション①：入院</h1>
+
+            <!-- swiperslide -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="swiper">
+                        <h2>PT</h2>
+                        <a href="#"><p>環境調整</p></a>
+                        <a href="#"><p>患肢の機能訓練</p></a>
+                        <a href="#"><p>健肢の機能訓練</p></a>
+                        <a href="#"><p>合併症予防</p></a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper">
+                        <h2>Ph</h2>
+                        <a href="#"><p>入院時対応</p></a>
+                        <a href="#"><p>入院時休薬確認</p></a>
+                        <a href="#"><p>調剤</p></a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper">
+                        <h2>Ns</h2>
+                        <a href="#"><p>外来受け入れ、問診、術前検査、入院連絡</p></a>
+                        <a href="#"><p>緊急処置、点滴、膀胱留置カテーテル挿入、牽引</p></a>
+                        <a href="#"><p>入院受け入れ、パス・手術説明、同意書確認、各部署連絡</p></a>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <br><br>
+                <div class="swiper-pagination"></div>
+            </div>
+    </div>
+  </main>
+
+     <!--上に戻るボタン設置-->
+   <div class="page_top">
+       <p id="PageTopBtn" class="mb-4"><a href="#wrap">Topへ</a></p>
+   </div>
+      <!--footerはこちらに-->
+  <footer>
+  </footer>
+</div>
+<!--aa-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+
+
+   <script>
+       //上に戻るボタンの挙動
+       $(function() {
+           var TopBtn = $('#PageTopBtn');
+           TopBtn.hide();
+           $(window).scroll(function() {
+               if ($(this).scrollTop() > 100) {
+                   TopBtn.fadeIn();
+               }
+               else {
+                   TopBtn.fadeOut();
+               }
+           });
+           TopBtn.click(function() {
+               $('body,html').animate({
+                   scrollTop: 0
+               }, 300);
+               return false;
+           });
+       });
+   </script>
+
+<script>
+    var sliderSelector = '.swiper-container',
+        options = {
+            init: false,
+            loop: true,
+            speed:800,
+            slidesPerView: '3',
+            centeredSlides : true,
+            effect: 'coverflow', // 'cube', 'fade', 'coverflow',
+            grabCursor: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                1023: {
+                    slidesPerView: 1,
+                    spaceBetween: 0
+                }
+            },
+            // Events
+            on: {
+                imagesReady: function(){
+                    this.el.classList.remove('loading');
+                }
+            }
+        };
+    var mySwiper = new Swiper(sliderSelector, options);
+
+    // Initialize slider
+    mySwiper.init();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+/*全体的なもの*/
+body{
+padding:0;
+background-image:url("img/background.jpg");
+background-size: cover;
+font-family: "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
+}
+h1{
+  font-size: 1.5rem;
+}
+
+#all_wrapper{
+  overflow: hidden;
+}
+
+/*疾患と職種の関わり*/
+.THA_text{
+  float: left;
+  width: 50%;
+  padding-left: 15%;
+}
+
+.THA_image{
+  float: left;
+  width: left;
+  padding-right: 15%;
+}
+
+.clear{
+  clear: both;
+}
+
+/*疾患の説明*/
+.detail{
+  display: inline-block;
+  color: #fff;
+  background-color: #6495ed;
+  border: 3px solid #6495ed;
+  border-radius: 3px;
+  width:50%;
+}
+
+.detail02{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.detail:hover{
+  opacity: 0.7;
+}
+
+.modal{
+  display:none;
+}
+
+.modalBody{
+  position: fixed;
+  z-index:1000;
+  background: #000;
+  width:70%;
+  left:15%;
+  top:50%;
+  height: 400px;
+}
+
+.modalBK{
+  position: fixed;
+  z-index:999;
+  height:100%;
+  width:100%;
+  background:#000;
+  opacity: 0.8;
+}
+
+.close{
+  color: #fff;
+}
+
+.btns{
+  margin: auto;
+}
+
+.intervention{
+  margin-top: 100px;
+}
+/*main全体設定*/
+.container{
+  margin:0 auto;
+  text-align: center;
+  width: 100%;
+  max-width: 960px;
+}
+
+
+.swiper-wrapper{
+  position: relative;
+  z-index: 100;
+  width:100%;
+}
+
+.swiper{
+  margin: auto;
+  height:100%;
+  position: relative;
+  z-index: 100;
+  width:90%;
+}
+
+
+/*上に戻るボタンCSS*/
+.page_top{
+  font-size:20px;
+}
+
+#PageTopBtn {
+  position: fixed;
+  bottom: -10px;
+  right: 10px;
+}
+#PageTopBtn a {
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+  background: #FFD700;
+  opacity: 0.7;
+  text-align: center;
+  border-radius: 5%;
+  outline: none;
+}
+#PageTopBtn a:hover {
+  text-decoration: none;
+  background: #FFD700;
+  opacity: 1;
+}
+/* パソコンで表示する場合のCSS */
+@media (min-width: 768px) {
+  #PageTopBtn {
+    font-size: 17px;
+  }
+  #PageTopBtn a {
+    width: 100px;
+    height: 70px;
+    padding: 24px 0;
+  }
+}
+/* スマホで表示する場合のCSS */
+@media (max-width: 767px) {
+  #PageTopBtn {
+    font-size: 15px;
+  }
+  #PageTopBtn a {
+    width: 50px;
+    height: 30px;
+    padding-top:5px;
+  }
+}
