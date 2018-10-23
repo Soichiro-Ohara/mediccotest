@@ -16,20 +16,10 @@ h1{
 }
 
 /*疾患と職種の関わり*/
-.THA_text{
-  float: left;
-  width: 50%;
-  padding-left: 15%;
-}
-
-.THA_image{
-  float: left;
-  width: left;
-  padding-right: 15%;
-}
-
-.clear{
-  clear: both;
+.detail01{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 10%;
 }
 
 /*疾患の説明*/
@@ -42,6 +32,10 @@ h1{
   width:50%;
 }
 
+.detail p{
+  margin:auto;
+}
+
 .detail02{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -51,39 +45,10 @@ h1{
   opacity: 0.7;
 }
 
-.modal{
-  display:none;
-}
 
-.modalBody{
-  position: fixed;
-  z-index:1000;
-  background: #000;
-  width:70%;
-  left:15%;
-  top:50%;
-  height: 400px;
-}
-
-.modalBK{
-  position: fixed;
-  z-index:999;
-  height:100%;
-  width:100%;
-  background:#000;
-  opacity: 0.8;
-}
-
-.close{
-  color: #fff;
-}
-
-.btns{
-  margin: auto;
-}
-
-.intervention{
-  margin-top: 100px;
+h1{
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 /*main全体設定*/
 .container{
@@ -96,7 +61,6 @@ h1{
 
 .swiper-wrapper{
   position: relative;
-  z-index: 100;
   width:100%;
 }
 
@@ -104,8 +68,7 @@ h1{
   margin: auto;
   height:100%;
   position: relative;
-  z-index: 100;
-  width:90%;
+  width:70%;
 }
 
 

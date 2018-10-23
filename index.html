@@ -8,22 +8,8 @@
     <link rel="stylesheet" href="style.css">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/jquery-inview@1.1.2/jquery.inview.min.js"></script>
-      <script>
-          <!-- 疾患項目のポップアップ -->
-          $(function(){
-          	$('.btns').click(function(){
-          		wn = '.' + $(this).data('tgt');
-          		var mW = $(wn).find('.modalBody').innerWidth() / 2;
-          		var mH = $(wn).find('.modalBody').innerHeight() / 2;
-          		$(wn).find('.modalBody').css({'margin-left':-mW,'margin-top':-mH});
-          		$(wn).fadeIn(500);
-          	});
-          	$('.close,.modalBK').click(function(){
-          		$(wn).fadeOut(500);
-          	});
-          });
 
-      </script>
+
     <title>メディッコ疾患詳細</title>
   </head>
 <body>　　
@@ -42,61 +28,44 @@
       <!--疾患と職種の関わりはこちらに-->
       <div class="title_detail">
         <h1>THAと職種の関わり</h1>
-        <p class="THA_text">大腿骨頸部骨折は転倒が危険因子のひとつとなる高齢者に多い疾患です。病院では主に整形外科で扱われ、多くの医療従事者が関わっています。
-                            しかし、皆さんは他の医療従事者が大腿骨頸部骨折という疾患に対するTHAでの外科治療までにどのように関与しているかご存知でしょうか？
-                            患者の入院から退院までどのように医療従事者が関わるかを理解することで、他職種とのスムーズな連携や疾患に対する理解が深まると考えています。
-                            今回は大腿骨頸部骨折におけるTHAを例に挙げて医療従事者がどのように関わっているかご紹介します。
-        </p>
-        <img src="#" alt="THAに関する画像" class="THA_image">
+          <div class="detail01">
+            <p class="THA_text">大腿骨頸部骨折は転倒が危険因子のひとつとなる高齢者に多い疾患です。病院では主に整形外科で扱われ、多くの医療従事者が関わっています。
+                                しかし、皆さんは他の医療従事者が大腿骨頸部骨折という疾患に対するTHAでの外科治療までにどのように関与しているかご存知でしょうか？
+                                患者の入院から退院までどのように医療従事者が関わるかを理解することで、他職種とのスムーズな連携や疾患に対する理解が深まると考えています。
+                                今回は大腿骨頸部骨折におけるTHAを例に挙げて医療従事者がどのように関わっているかご紹介します。
+            </p>
+            <img src="#" alt="THAに関する画像" class="THA_image">
+          </div>
         <div class="clear"></div>
 
         <h1 class="detail_explain">疾患の説明</h1>
         <div class="detail02">
           <div class="symptom">
-            <div class="detail">
-              <p data-tgt="wd1" class="btns">症状</p>
-              <div class="modal wd1">
-                	<div class="modalBody">
-                		<p class="close">×close</p><br>
-                		<p>大腿骨頸部骨折の主な症状は、股関節痛を訴え、歩行不良になるなどの症状が現れます。<br><br>
-                      ・足の付け根の強い痛み<br>
-                      ・歩行困難または歩行不良<br>
-                      ・中等度以上の認知症患者の場合は痛みの訴えがない場合もある
-                    </p>
-                	</div>
-                	<div class="modalBK"></div>
+            <a href="#">
+              <div class="detail">
+                <p>症状</p>
               </div>
-            </div>
+            </a>
           </div>
           <div class="cause">
-            <div class="detail">
-              <p data-tgt="wd2" class="btns">原因</p>
-              <div class="modal wd2">
-                	<div class="modalBody">
-                		<p class="close">×close</p><br>
-                		<p>主な原因は高齢の女性に多く発症する骨粗しょう症です。その他に若年層では転落・交通事故・スポーツなどによる外部からの強い圧力によって起こりますが、骨粗しょう症のある高齢者の場合は転倒・階段からの転落・尻もちなどの軽微な力で骨折する場合があります。</p>
-                	</div>
-                	<div class="modalBK"></div>
-                  </div>
-            </div>
+            <a href="#">
+              <div class="detail">
+                <p>原因</p>
+              </div>
+            </a>
           </div>
           <div class="therapy">
+            <a href="#">
             <div class="detail">
-              <p data-tgt="wd3" class="btns">治療法</p>
-              <div class="modal wd3">
-                	<div class="modalBody">
-                		<p class="close">×close</p><br>
-                		<p>大腿骨頸部骨折・転子部骨折ともに治療法の第一選択として手術療法が選択されます。術式にはTHA（人工関節置換術）、ピン固定、プレート固定などが選択されます。転移の大きい骨折や高齢者の場合には股関節全体の人工関節への置換がメインになります。</p>
-                	</div>
-                	<div class="modalBK"></div>
-              </div>
+              <p>治療法</p>
             </div>
+            </a>
           </div>
         </div>
       </div>
 
       <!--アクション①はこちらに-->
-      <h1 class="intervention">アクション①：入院</h1>
+      <h1 class="intervention">アクション①：患者入院</h1>
 
             <!-- swiperslide -->
             <div class="swiper-container">
@@ -112,10 +81,8 @@
                     </div>
                     <div class="swiper-slide">
                       <div class="swiper">
-                        <h2>Ph</h2>
-                        <a href="#"><p>入院時対応</p></a>
-                        <a href="#"><p>入院時休薬確認</p></a>
-                        <a href="#"><p>調剤</p></a>
+                        <h2>OT</h2>
+                        <a href="#"><p>術前：寝たきりやせん妄を予防し、術後の速やかな回復や日常生活の獲得につなげます</p></a>
                       </div>
                     </div>
                     <div class="swiper-slide">
@@ -126,13 +93,74 @@
                         <a href="#"><p>入院受け入れ、パス・手術説明、同意書確認、各部署連絡</p></a>
                       </div>
                     </div>
+                    <div class="swiper-slide">
+                      <div class="swiper">
+                        <h2>RD</h2>
+                        <a href="#"><p>食事提供</p></a>
+                        <a href="#"><p>栄養管理計画の作成</p></a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="swiper">
+                        <h2>Ph</h2>
+                        <a href="#"><p>入院時対応</p></a>
+                        <a href="#"><p>入院時休薬確認</p></a>
+                        <a href="#"><p>調剤</p></a>
+                      </div>
+                    </div>
                 </div>
-
+                <div class="swiper-scrollbar"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
                 <br><br>
                 <div class="swiper-pagination"></div>
             </div>
+
+            <!--アクション②はこちらに-->
+            <h1 class="intervention">アクション②：治療手術</h1>
+
+                  <!-- swiperslide -->
+                  <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="swiper">
+                              <h2>OT</h2>
+                              <a href="#"><p>術当日：手術の内容と術後指示への準備</p></a>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="swiper">
+                              <h2>Ns</h2>
+                              <a href="#"><p>入院～手術前日、準備</p></a>
+                              <a href="#"><p>手術当日（術前）</p></a>
+                              <a href="#"><p>術中管護</p></a>
+                              <a href="#"><p>手術当日（術後）疼痛管理、合併症予防</p></a>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="swiper">
+                              <h2>RD</h2>
+                              <a href="#"><p>食事提供</p></a>
+                              <a href="#"><p>栄養管理計画の作成</p></a>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="swiper">
+                              <h2>Ph</h2>
+                              <a href="#"><p>入院時対応</p></a>
+                              <a href="#"><p>入院時休薬確認</p></a>
+                              <a href="#"><p>調剤</p></a>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="swiper-scrollbar"></div>
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+                      <br><br>
+                      <div class="swiper-pagination"></div>
+                  </div>
+            <!--アクション②ここまで-->
+
     </div>
   </main>
 
@@ -172,42 +200,24 @@
        });
    </script>
 
-<script>
-    var sliderSelector = '.swiper-container',
-        options = {
-            init: false,
-            loop: true,
-            speed:800,
-            slidesPerView: '3',
-            centeredSlides : true,
-            effect: 'coverflow', // 'cube', 'fade', 'coverflow',
-            grabCursor: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
+  <script>
+      var mySwiper = new Swiper('.swiper-container', {
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-            breakpoints: {
-                1023: {
-                    slidesPerView: 1,
-                    spaceBetween: 0
-                }
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
             },
-            // Events
-            on: {
-                imagesReady: function(){
-                    this.el.classList.remove('loading');
-                }
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                draggable: true,
             }
-        };
-    var mySwiper = new Swiper(sliderSelector, options);
+      });
+  </script>
 
-    // Initialize slider
-    mySwiper.init();
-</script>
 
 </body>
 </html>
