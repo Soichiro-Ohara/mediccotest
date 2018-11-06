@@ -1,121 +1,19 @@
 @charset "UTF-8";
 
-/*全体的なもの*/
-body{
-padding:0;
-background-image:url("img/background.jpg");
-background-size: cover;
-font-family: "Hiragino Kaku Gothic ProN",  Meiryo,  sans-serif;
-}
-h1{
-  font-size: 1.5rem;
-}
-
-#all_wrapper{
-  overflow: hidden;
-}
-
-/*疾患と職種の関わり*/
-.detail01{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 10%;
-}
-
-/*疾患の説明*/
-.detail{
-  display: inline-block;
-  color: #fff;
-  background-color: #6495ed;
-  border: 3px solid #6495ed;
-  border-radius: 3px;
-  width:50%;
-}
-
-.detail p{
-  margin:auto;
-}
-
-.detail02{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.detail:hover{
-  opacity: 0.7;
-}
-
-
-h1{
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-/*main全体設定*/
-.container{
-  margin:0 auto;
-  text-align: center;
-  width: 100%;
-  max-width: 960px;
-}
-
-
-.swiper-wrapper{
-  position: relative;
-  width:100%;
-}
-
-.swiper{
-  margin: auto;
-  height:100%;
-  position: relative;
-  width:70%;
-}
-
-
-/*上に戻るボタンCSS*/
-.page_top{
-  font-size:20px;
-}
-
-#PageTopBtn {
+header {
   position: fixed;
-  bottom: -10px;
-  right: 10px;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  transition: .3s;
+  height:100px;
+  background-color: #fff;
 }
-#PageTopBtn a {
-  display: block;
-  text-decoration: none;
-  color: #FFFFFF;
-  background: #FFD700;
-  opacity: 0.7;
-  text-align: center;
-  border-radius: 5%;
-  outline: none;
-}
-#PageTopBtn a:hover {
-  text-decoration: none;
-  background: #FFD700;
-  opacity: 1;
-}
-/* パソコンで表示する場合のCSS */
-@media (min-width: 768px) {
-  #PageTopBtn {
-    font-size: 17px;
-  }
-  #PageTopBtn a {
-    width: 100px;
-    height: 70px;
-    padding: 24px 0;
-  }
-}
-/* スマホで表示する場合のCSS */
-@media (max-width: 767px) {
-  #PageTopBtn {
-    font-size: 15px;
-  }
-  #PageTopBtn a {
-    width: 50px;
-    height: 30px;
-    padding-top:5px;
-  }
+
+p{
+  height:1200px;
+  background-color: #000;
+  color: #fff;
+  margin: 50px auto;
 }
